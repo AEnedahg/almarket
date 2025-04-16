@@ -17,7 +17,7 @@ function Nav() {
   return (
     <header
       className="relative w-screen p-4 flex justify-between items-center lg:max-w-[1440px]
-    mx-auto lg:px-25 font-poppins
+    mx-auto lg:px-25 font-poppins relative z-20
     "
     >
       <Link href="/" className="cursor-pointer">
@@ -40,7 +40,7 @@ function Nav() {
                 },
               }}
               exit={{ width: 0 }}
-              className="absolute bg-black h-screen pt-20 -top-12 -right-4
+              className="absolute bg-[#001358] h-screen pt-20 -top-12 -right-4
           flex flex-col gap-y-5 items-center *:text-white w-screen
           "
             >
@@ -74,14 +74,22 @@ function Nav() {
         </div>
         <div className="flex lg:w-2/4 justify-center gap-x-7">
           <Link href="/signup">
-            <button className="text-white py-2 flex items-center justify-center bg-black
+            <button
+              className="text-white py-2 flex items-center justify-center bg-black
             rounded-md w-25
-            ">Sign up</button>
+            "
+            >
+              Sign up
+            </button>
           </Link>
           <Link href="/login">
-            <button className="text-white py-2 flex items-center justify-center bg-black
+            <button
+              className="text-white py-2 flex items-center justify-center bg-black
             rounded-md w-25
-            ">Login</button>
+            "
+            >
+              Login
+            </button>
           </Link>
         </div>
       </div>
