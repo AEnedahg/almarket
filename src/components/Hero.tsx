@@ -1,7 +1,6 @@
 import React from 'react'
 import GSAPLetters from './letters';
 import ladyOne from '../../public/png/hero/lady-one.png';
-import ladyTwo from '../../public/png/hero/lady-two.png';
 import Image from 'next/image';
 
 function Hero() {

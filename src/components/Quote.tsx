@@ -11,8 +11,8 @@ function Quote() {
         <div className="max-w-100">
           <small className="text-lg">Buffet, Warren &#40;1930&#41;</small>
           <h1 className="text-3xl lg:text-4xl font-semibold mt-10">
-            "Do not save what is left after spending, but spend what is left
-            after saving."
+            `&quot;Do not save what is left after spending, but spend what is
+            left after saving.`&quot;
           </h1>
         </div>
         <Image
