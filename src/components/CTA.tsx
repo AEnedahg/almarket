@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import cta from '../../public/svg/cta/cta.svg';
+
 function CTA() {
   return (
     <section className="mt-40 w-screen">
