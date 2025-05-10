@@ -49,15 +49,27 @@ function Nav() {
                 onClick={mobileNav}
               />
               <div className="flex flex-col *:text-center *:text-2xl gap-y-5">
-                <Link href="/">Home</Link>
-                <Link href="/features">Features</Link>
-                <Link href="/contact-us">Contact</Link>
-                <Link href="/about us">About Us</Link>
+                <Link href="/"
+                onClick={mobileNav}
+                >Home</Link>
+                <Link href="/features"
+                onClick={mobileNav}
+                >Features</Link>
+                <Link href="/contact-us"
+                onClick={mobileNav}
+                >Contact</Link>
+                <Link href="/about us"
+                onClick={mobileNav}
+                >About Us</Link>
                 <div className="flex flex-col gap-y-5">
-                  <Link href="/sign-up">
+                  <Link href="/sign-up"
+                  onClick={mobileNav}
+                  >
                     <button>Sign up</button>
                   </Link>
-                  <Link href="/login">
+                  <Link href="/login"
+                  onClick={mobileNav}
+                  >
                     <button>Login</button>
                   </Link>
                 </div>
