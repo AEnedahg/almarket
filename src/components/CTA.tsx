@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import cta from '../../public/svg/cta/cta.svg';
+import Link from 'next/link';
 
 function CTA() {
   return (
@@ -29,13 +30,17 @@ function CTA() {
               Secure your future by growing wealth, achieving goals, and gaining
               peace through saving and investing.
             </h1>
-            <div className='max-w-80 flex gap-x-4'>
-              <button className="bg-black text-base py-4 w-30 rounded-lg text-white mt-4">
-                Get Started
-              </button>
-              <button className="bg-black text-base py-4 w-30 rounded-lg text-white mt-4">
-                Login
-              </button>
+            <div className="max-w-80 flex gap-x-4">
+              <Link href="sign-up">
+                <button className="bg-black text-base py-4 w-30 rounded-lg text-white mt-4">
+                  Get Started
+                </button>
+              </Link>
+              <Link href="login">
+                <button className="bg-black text-base py-4 w-30 rounded-lg text-white mt-4">
+                  Login
+                </button>
+              </Link>
             </div>
           </div>
         </div>

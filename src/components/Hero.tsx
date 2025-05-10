@@ -24,6 +24,11 @@ function Hero() {
               Get Started
             </button>
           </Link>
+          <Link href="login">
+            <button className="bg-black text-3xl p-6 rounded-lg text-white mt-4">
+              Login
+            </button>
+          </Link>
         </div>
         <Image src={ladyOne} alt="lady-one" className="w-5/6 lg:w-2/4" />
       </div>
