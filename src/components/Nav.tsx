@@ -54,7 +54,7 @@ function Nav() {
                 <Link href="/contact-us">Contact</Link>
                 <Link href="/about us">About Us</Link>
                 <div className="flex flex-col gap-y-5">
-                  <Link href="/signup">
+                  <Link href="/sign-up">
                     <button>Sign up</button>
                   </Link>
                   <Link href="/login">
