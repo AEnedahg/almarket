@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 
-const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const customerRegisterSchema = z
   .object({
@@ -42,13 +41,10 @@ const customerRegisterSchema = z
   });
 
 function CustomerRegister() {
-  const router = useRouter();
 
   const {
     register,
-    handleSubmit,
-    setError,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm({
     resolver: zodResolver(customerRegisterSchema),
   });
