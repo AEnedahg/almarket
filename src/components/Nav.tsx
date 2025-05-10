@@ -73,7 +73,7 @@ function Nav() {
           <Link href="/about us">About Us</Link>
         </div>
         <div className="flex lg:w-2/4 justify-center gap-x-7">
-          <Link href="/signup">
+          <Link href="/sign-up">
             <button
               className="text-white py-2 flex items-center justify-center bg-black
             rounded-md w-25
