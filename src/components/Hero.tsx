@@ -2,6 +2,7 @@ import React from 'react'
 import GSAPLetters from './letters';
 import ladyOne from '../../public/png/hero/lady-one.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Hero() {
   
@@ -18,9 +19,11 @@ function Hero() {
         </div>
         <div className="flex flex-col items-center">
           <GSAPLetters />
-          <button className="bg-black text-3xl p-6 rounded-lg text-white mt-4">
-            Get Started
-          </button>
+          <Link href="sign-up">
+            <button className="bg-black text-3xl p-6 rounded-lg text-white mt-4">
+              Get Started
+            </button>
+          </Link>
         </div>
         <Image src={ladyOne} alt="lady-one" className="w-5/6 lg:w-2/4" />
       </div>
