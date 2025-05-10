@@ -3,8 +3,8 @@ import React from "react";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-
-
+import googleIcon from '../../public/svg/signin/icons8-google.svg';
+import Image from 'next/image';
 const customerRegisterSchema = z
   .object({
     email: z
@@ -85,6 +85,13 @@ function CustomerRegister() {
           className="text-white bg-black px-6 py-4 rounded-lg"
         >
           Login
+        </button>
+        <button className="border-gray-400 border-1 border-solid rounded-lg
+        flex justify-center items-center gap-x-2 block mt-5 px-6 py-4 bg-black
+        text-white
+        ">
+          <Image src={googleIcon} alt="googleIcon" width={20} height={20} />
+          Sign in with Google
         </button>
       </form>
     </div>
